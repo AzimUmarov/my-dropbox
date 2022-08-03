@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mydropbox-dev-234228-authRole",
+      "UnauthRoleArn": "arn:aws:iam::057328106542:role/amplify-mydropbox-dev-234228-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::057328106542:role/amplify-mydropbox-dev-234228-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mydropbox-dev-234228-deployment",
+      "UnauthRoleName": "amplify-mydropbox-dev-234228-unauthRole",
+      "StackName": "amplify-mydropbox-dev-234228",
+      "StackId": "arn:aws:cloudformation:us-east-1:057328106542:stack/amplify-mydropbox-dev-234228/0907ab90-135c-11ed-8a0d-0aa9d7020703",
+      "AmplifyAppId": "d1vpu2jjpgh6xx"
+    }
+  },
+  "auth": {
+    "mydropboxa31a3b7b": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-234228-deployment/amplify-cfn-templates/auth/mydropboxa31a3b7b-cloudformation-template.json",
+        "logicalId": "authmydropboxa31a3b7b"
+      },
+      "lastPushTimeStamp": "2022-08-03T19:06:27.316Z",
+      "output": {
+        "UserPoolId": "us-east-1_WGs42WMwi",
+        "AppClientIDWeb": "40rn59gauhh34e5lvo6evkuecj",
+        "AppClientID": "41tfg82bo0jed28a59hq4pqq2v",
+        "IdentityPoolId": "us-east-1:cdf382a5-7668-4df9-bed2-93c22894b223",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:057328106542:userpool/us-east-1_WGs42WMwi",
+        "IdentityPoolName": "mydropboxa31a3b7b_identitypool_a31a3b7b__dev",
+        "UserPoolName": "mydropboxa31a3b7b_userpool_a31a3b7b"
+      },
+      "lastPushDirHash": "wqYdGGCZxKAGVxCWSX0L5udp8XI="
+    }
+  }
+}
