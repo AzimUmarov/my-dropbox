@@ -152,15 +152,15 @@
         }
       }
     },
-    "authmydropboxa31a3b7b": {
+    "authmydropbox0822d848": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-234228-deployment/amplify-cfn-templates/auth/mydropboxa31a3b7b-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-114811-deployment/amplify-cfn-templates/auth/mydropbox0822d848-cloudformation-template.json",
         "Parameters": {
-          "identityPoolName": "mydropboxa31a3b7b_identitypool_a31a3b7b",
+          "identityPoolName": "mydropbox0822d848_identitypool_0822d848",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "mydropa31a3b7b",
-          "userPoolName": "mydropboxa31a3b7b_userpool_a31a3b7b",
+          "resourceNameTruncated": "mydrop0822d848",
+          "userPoolName": "mydropbox0822d848_userpool_0822d848",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -177,13 +177,12 @@
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "mydropa31a3b7b_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "mydrop0822d848_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "a31a3b7b",
-          "resourceName": "mydropboxa31a3b7b",
+          "sharedId": "0822d848",
+          "resourceName": "mydropbox0822d848",
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
-          "usernameAttributes": "email",
           "userPoolGroupList": "",
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
@@ -206,11 +205,94 @@
         }
       }
     },
+    "functionS3Trigger1713af40": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-114811-deployment/amplify-cfn-templates/function/S3Trigger1713af40-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-mydropbox-dev-114811-deployment",
+          "s3Key": "amplify-builds/S3Trigger1713af40-5436347a654f2f326763-build.zip",
+          "env": "dev"
+        }
+      }
+    },
+    "storages390c59910": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-114811-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "Parameters": {
+          "bucketName": "mydropboxc2d1b892cb5f4761bb777396e76c089e",
+          "selectedGuestPermissions": "",
+          "selectedAuthenticatedPermissions": "s3:PutObject,s3:GetObject,s3:ListBucket,s3:DeleteObject",
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "triggerFunction": "S3Trigger1713af40",
+          "s3PrivatePolicy": "Private_policy_90c59910",
+          "s3ProtectedPolicy": "Protected_policy_90c59910",
+          "s3PublicPolicy": "Public_policy_90c59910",
+          "s3ReadPolicy": "read_policy_90c59910",
+          "s3UploadsPolicy": "Uploads_policy_90c59910",
+          "authPolicyName": "s3_amplify_90c59910",
+          "unauthPolicyName": "s3_amplify_90c59910",
+          "AuthenticatedAllowList": "ALLOW",
+          "GuestAllowList": "DISALLOW",
+          "s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedUploads": "s3:PutObject",
+          "s3PermissionsGuestPublic": "DISALLOW",
+          "s3PermissionsGuestUploads": "DISALLOW",
+          "functionS3Trigger1713af40Name": {
+            "Fn::GetAtt": [
+              "functionS3Trigger1713af40",
+              "Outputs.Name"
+            ]
+          },
+          "functionS3Trigger1713af40Arn": {
+            "Fn::GetAtt": [
+              "functionS3Trigger1713af40",
+              "Outputs.Arn"
+            ]
+          },
+          "functionS3Trigger1713af40LambdaExecutionRole": {
+            "Fn::GetAtt": [
+              "functionS3Trigger1713af40",
+              "Outputs.LambdaExecutionRole"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
+    "apimydropbox": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mydropbox-dev-114811-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "AppSyncApiName": "mydropbox",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authmydropbox0822d848",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "S3DeploymentBucket": "amplify-mydropbox-dev-114811-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/53964eac214b70bc1dea23f9d1cfcfe7cac21fb6",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authmydropboxa31a3b7b"
+        "authmydropbox0822d848"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -305,7 +387,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authmydropboxa31a3b7b",
+            "authmydropbox0822d848",
             "Outputs.IdentityPoolId"
           ]
         },

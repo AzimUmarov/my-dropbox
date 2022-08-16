@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "mydropbox",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/student/WebstormProjects/my-dropbox/amplify/backend/api/mydropbox/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authmydropbox0822d848"
+      }
+    ]
+  }
+}
