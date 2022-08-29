@@ -29,15 +29,21 @@ or in localhost:3000
 
 ### The Core Team
 <div>
-  <h >
-    ![avatar](https://avatars.githubusercontent.com/u/94437438?v=4)
+  <h3>
+  <img src="https://avatars.githubusercontent.com/u/94437438?v=4" alt="Avatar" style="vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;">
     <a href="https://adonisjs.com">
       Azimjon Umarov
     </a>
     </h3>
     <h3>
-      ![avatar](https://avatars.githubusercontent.com/u/57597976?v=4)
-    <a href="https://docs.adonisjs.com" >
+    <img src="https://avatars.githubusercontent.com/u/57597976?v=4" alt="Avatar" style="vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;">
+    <a href="https://docs.adonisjs.com">
       Bahtibek Anvarov
     </a>
   </h3>
@@ -45,4 +51,3 @@ or in localhost:3000
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar Silicon Valley</a></i></span>
 <span><img alt='Qwasar Silicon Valley Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
-
