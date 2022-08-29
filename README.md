@@ -30,8 +30,23 @@ Visit the link  https://my-dropbox-app.netlify.app
 or in localhost:3000
 
 ### The Core Team
-Azimjon Umarov @umarov_a
-Bahtibek Anvarov @anvarov_b
+<div align="center">
+  <h3>
+    <a href="https://adonisjs.com">
+      Azimjon Umarov
+    </a>
+    <span> | </span>
+    <a href="https://docs.adonisjs.com">
+      Bahtibek Anvarov
+    </a>
+    <span> | </span>
+    <a href=".github/CONTRIBUTING.md">
+      Contributing
+    </a>
+  </h3>
+</div>
+ @umarov_a
+ @anvarov_b
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar Silicon Valley</a></i></span>
 <span><img alt='Qwasar Silicon Valley Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
