@@ -29,7 +29,7 @@ or in localhost:3000
 
 ### The Core Team
 <div>
-  <h3>
+  <div style="display: flex; align-items: center; " >
   <img src="https://avatars.githubusercontent.com/u/94437438?v=4" alt="Avatar" style="vertical-align: middle;
   width: 50px;
   height: 50px;
@@ -37,16 +37,16 @@ or in localhost:3000
     <a href="https://adonisjs.com">
       Azimjon Umarov
     </a>
-    </h3>
-    <h3>
+    </div>
+    <div style="display: flex; align-items: center; ">
     <img src="https://avatars.githubusercontent.com/u/57597976?v=4" alt="Avatar" style="vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://docs.adonisjs.com">
+    <a href="https://docs.adonisjs.com" >
       Bahtibek Anvarov
     </a>
-  </h3>
+  </div>
 </div>
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar Silicon Valley</a></i></span>
