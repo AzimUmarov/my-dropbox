@@ -29,12 +29,12 @@ or in localhost:3000
 
 ### The Core Team
 <div>
-  <div style="display: flex; align-items: center; " >
+  <div style="display: flex;" >
   <img src="https://avatars.githubusercontent.com/u/94437438?v=4" alt="Avatar" style="vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://adonisjs.com">
+    <a href="https://adonisjs.com" style="align-items: center;">
       Azimjon Umarov
     </a>
     </div>
@@ -43,7 +43,7 @@ or in localhost:3000
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://docs.adonisjs.com" >
+    <a href="https://docs.adonisjs.com" style="align-items: center;">
       Bahtibek Anvarov
     </a>
   </div>
