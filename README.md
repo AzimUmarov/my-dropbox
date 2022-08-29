@@ -1,6 +1,6 @@
 # Welcome to My Dropbox
 
-<a href="https://my-dropbox-app.netlify.app" > Live Demo <a>
+<a href="https://my-dropbox-app.netlify.app" > Live Demo </a>
 
 
 ## Task
@@ -34,7 +34,7 @@ or in localhost:3000
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://adonisjs.com">
+    <a href="https://github.com/theazimjon" >
       Azimjon Umarov
     </a>
     </h3>
@@ -43,7 +43,7 @@ or in localhost:3000
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://docs.adonisjs.com">
+    <a href="https://github.com/bahtibek-hu" >
       Bahtibek Anvarov
     </a>
   </h3>
