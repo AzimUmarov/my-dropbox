@@ -35,7 +35,6 @@ or in localhost:3000
     <a href="https://adonisjs.com">
       Azimjon Umarov
     </a>
-    <span> | </span>
     <a href="https://docs.adonisjs.com">
       Bahtibek Anvarov
     </a>
