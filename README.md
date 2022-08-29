@@ -30,7 +30,7 @@ Visit the link  https://my-dropbox-app.netlify.app
 or in localhost:3000
 
 ### The Core Team
-<div align="center">
+<div>
   <h3>
     <a href="https://adonisjs.com">
       Azimjon Umarov
@@ -38,10 +38,6 @@ or in localhost:3000
     <span> | </span>
     <a href="https://docs.adonisjs.com">
       Bahtibek Anvarov
-    </a>
-    <span> | </span>
-    <a href=".github/CONTRIBUTING.md">
-      Contributing
     </a>
   </h3>
 </div>
