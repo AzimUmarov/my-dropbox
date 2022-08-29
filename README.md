@@ -2,20 +2,18 @@
 
     🅜🅨 🅓🅡🅞🅟🅑🅞🅧
 
-    https://my-dropbox-app.netlify.app
+https://my-dropbox-app.netlify.app
 
 
 ## Task
 Create a Dropbox clone application
 - store files
-- upload files
 - file system operations
 - create directory
 
 
 ## Description
 We solved the problem with firebase and aws amplify
-We has been some problems with amplify and we continued the project with Google firebase
 
 ![App UI](https://github.com/theazimjon/my-dropbox/blob/main/Screen%20Shot%202022-08-29%20at%2016.29.11.png)
 
