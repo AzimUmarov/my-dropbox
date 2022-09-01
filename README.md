@@ -25,7 +25,7 @@ npm start
 
 ## Usage
 Visit the link  https://my-dropbox-app.netlify.app
-or in localhost:3000
+or on localhost:3000
 
 ### The Core Team
 <div>
