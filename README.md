@@ -27,6 +27,13 @@ npm start
 Visit the link  https://my-dropbox-app.netlify.app
 or on localhost:3000
 
+
+### MIT License
+[![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0])  
+<a href="https://github.com/theazimjon/my-dropbox/blob/main/LICENSE.md" > Copyright (c) 2022 Azimjon Umarov </a>
+<p> Forbidden plagiarism for assigments! </p>
+
+
 ### The Core Team
 <div>
   <h3>
@@ -43,7 +50,7 @@ or on localhost:3000
   width: 50px;
   height: 50px;
   border-radius: 50%;">
-    <a href="https://github.com/bahtibek-hu" >
+    <a href="https://github.com/bahtibek-an" >
       Bahtibek Anvarov
     </a>
   </h3>
